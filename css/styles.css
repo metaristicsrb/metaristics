@@ -3869,6 +3869,9 @@ textarea.form-control-lg {
   color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  text-shadow: 3px 3px 3px black;
+  font-weight: bolder;
+  font-size: 16px;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
