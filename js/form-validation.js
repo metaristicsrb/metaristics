@@ -27,7 +27,7 @@ $(function() {
         {
             $.ajax({
                 type: "POST",
-                url: "http://serveezy.com:5050/api/email/contact",
+                url: "https://api.serveezy.com/api/email/contact",
                 data: JSON.stringify(contact),
                 contentType: "application/json; charset=utf-8",  
                 dataType: "json",  
