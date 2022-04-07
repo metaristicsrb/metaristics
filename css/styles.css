@@ -11339,6 +11339,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+#contactForm .error {
+  color: #dc3545;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
