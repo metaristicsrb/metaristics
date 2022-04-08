@@ -25,6 +25,8 @@ $(function() {
 
         if(contact.CaptchaResponse !== '')
         {
+            $("#submitButton").prop("disabled", true);
+            $("#submitButton").text("Enviando mensaje...");
             $.ajax({
                 type: "POST",
                 url: "https://api.serveezy.com/api/email/contact",
@@ -35,6 +37,8 @@ $(function() {
                     grecaptcha.reset();
                     $('#submitSuccessMessage').removeClass("d-none");
                     $('#captchErrorMessage').addClass("d-none");
+                    $("#form-container").addClass("d-none");
+                    $("#submitButton").addClass("d-none");
                 },
                 error : function(request, status, error) {
                     $('#submitErrorMessage').removeClass("d-none");
