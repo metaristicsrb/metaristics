@@ -28,6 +28,8 @@ $(function() {
 
         if(captcha !== '')
         {
+          $("#submitButton").prop("disabled", true);
+          $("#submitButton").text("Enviando mensaje...");
             $.ajax({
                 type: "POST",
                 url: "http://localhost:5000/api/email/job-application",
@@ -40,7 +42,9 @@ $(function() {
                     grecaptcha.reset();
                     $('#submitSuccessMessage').removeClass("d-none");
                     $('#captchErrorMessage').addClass("d-none");
-                    $('#jobForm').modal('hide');
+                    $("#form-container").addClass("d-none");
+                    $("#submitButton").addClass("d-none");
+                    $('#submitButton').addClass("d-none");
                 },
                 error : function(request, status, error) {
                     $('#submitErrorMessage').removeClass("d-none");

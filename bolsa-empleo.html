@@ -132,46 +132,50 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h3 class="text-uppercase">Becario (Especialidad en Q.A)</h3>
-                                    <div class="mt-4 text-lg-start">Los campos marcados con asterisco (*) son obligatorios</span>
-                                    <form id="job-form">
-                                        <div class="row mt-4">
-                                          <div class="form-group col-md-4">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*">
-                                          </div>
-                                          <div class="form-group col-md-4">
-                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono*">
-                                          </div>
-                                          <div class="form-group col-md-4">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
-                                          </div>
-                                        </div>
+                                    <div id="form-container">
+                                        <!-- Project details-->
+                                        <h3 class="text-uppercase">Becario (Especialidad en Q.A)</h3>
+                                        <div class="mt-4 text-lg-start">Los campos marcados con asterisco (*) son obligatorios</div>
+                                        <form id="job-form">
+                                                <div class="row mt-4">
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono*">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
+                                                    </div>
+                                                    </div>
+        
+                                                    <div class="row mt-4">
+                                                        <div class="form-group col-md-6 text-lg-start">
+                                                            <label for="cv">Curriculom Vitae*</label>
+                                                            <input class="form-control" type="file" id="cv" name="cv" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
+                                                        </div>
+                                                        <div class="form-group col-md-6 text-lg-start">
+                                                            <label for="personal-letter">Carta Personal</label>
+                                                            <input class="form-control" type="file" id="personalLetter" name="personalLetter" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="row mt-4">
+                                                        <div class="form-group col-md-12 text-lg-start">
+                                                            <label for="question">Tienes alguna duda:</label>
+                                                            <textarea  class="form-control" id="question" name="question" rows="4" cols="50" placeholder="Tu mensaje"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center mt-4">
+                                                        <div class="g-recaptcha" data-sb-validations="required" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                                    </div>
 
-                                        <div class="row mt-4">
-                                            <div class="form-group col-md-6 text-lg-start">
-                                                <label for="cv">Curriculom Vitae*</label>
-                                                <input class="form-control" type="file" id="cv" name="cv" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
-                                            </div>
-                                            <div class="form-group col-md-6 text-lg-start">
-                                                <label for="personal-letter">Carta Personal</label>
-                                                <input class="form-control" type="file" id="personalLetter" name="personalLetter" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row mt-4">
-                                            <div class="form-group col-md-12 text-lg-start">
-                                                <label for="question">Tienes alguna duda:</label>
-                                                <textarea  class="form-control" id="question" name="question" rows="4" cols="50" placeholder="Tu mensaje"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-center mt-4">
-                                            <div class="g-recaptcha" data-sb-validations="required" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-                                        </div>
-                                        <div class="d-none" id="captchErrorMessage"><div class="text-center text-danger mb-3">Captcha es requerido.</div></div>
-                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Hubo un error al enviar su mensaje!</div></div>
-                                        <div class="mt-4 mb-2 text-center"><button class="btn btn-primary btn-xl text-uppercase" type="submit">Aplicar</button></div>
-                                      </form>
+                                                <div class="d-none" id="captchErrorMessage"><div class="text-center text-danger mb-3">Captcha es requerido.</div></div>
+                                                <div class="mt-4 mb-2 text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Aplicar</button></div>
+                                        </form>
+                                    </div>
+
+                                    <div class="d-none" id="submitSuccessMessage"><div class="text-center mb-3">Mensaje enviado exitosamente!</div></div>
 
                                 </div>
                             </div>
