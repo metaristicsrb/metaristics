@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Metaristics Soluciones RB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="Ver más ..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bolsa de Trabajo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading">Forma parte de nuestro equipo</div>
+            </div>
+        </header>
+
+        <!-- Contact-->
+        <section class="page-section" id="empleo">
+            <div class="container" id="job">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="subheading">Becario (Especialidad en Q.A)</h4>
+                        Ref.#: 0001
+                    </div>
+                    <div><button class="btn btn-primary btn-xl text-uppercase" onclick="jobDetails()">Ver</button></div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="container d-none" id="job-container">
+                <h3 class="text-center">Becario (Especialidad en Q.A)</h3>
+                <div class="mt-4 mb-2 text-center"><button class="btn btn-secondary btn-xl text-uppercase" onclick="goBack()">Regresar</button></div>
+
+                <ul>
+                    <li><strong>Edad:</strong> 20 - 24 años</li>
+                    <li><strong>Sexo:</strong> Indististo</li>
+                </ul>
+                <h4>Objetivos de la posición</h4>
+                <p>Como Becario (Tester Jr) apoyarás en las actividades de probar productos y proporcionar informes al equipo del proyecto</p>
+
+                <h4>Principales funciones</h4>
+                <ul>
+                    <li>Levantamiento de historias de usuario con herramientas colaborativas.</li>
+                    <li>Generación de escenarios de pruebas</li>
+                    <li>Pruebas de productos, reporte y seguimiento a la resolución de errores en
+                        aplicaciones desarrolladas en plataformas como HTML, .Net y SOA.</li>
+                    <li>Metodología SCRUM, ágil.</li>
+                    <li>Automatización de pruebas, soporte a pruebas de usuarios</li>
+                </ul>
+            
+                <h4>Requisitos</h4>
+                <p><strong>Formación académica:</strong> pasante o titulado en ingeniería en sistemas, licenciatura sistemas, administración, 
+                    y/o ingeniería industrial., ingles: intermedio</p>
+            
+                <h4>Competencias</h4>
+                <ul>
+                    <li>Compromiso y orientación a resultados, orientación al cliente, agilidad y
+                        capacidad de aprendizaje, trabajo colaborativo, creatividad, análisis y escucha</li>
+                </ul>
+
+                <h4>Beneficios</h4>
+                <ul>
+                    <li>Apoyo económico</li>
+                    <li>Acceso a plataforma de cursos</li>
+                    <li>Liberación de carta de créditos profesionales.</li>
+                    <li>Trabajo remoto</li>
+                    <li>Oportunidad de crecimiento profesional</li>
+                </ul>
+                <div class="mt-4 mb-2 text-center"><button class="btn btn-primary btn-xl text-uppercase" onclick="openModal()">Aplicar</button></div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright Metaristics Soluciones RB. &copy; nuestro Website 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Política de privacidad </a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="portfolio-modal modal fade" id="jobForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Becario (Especialidad en Q.A)</h3>
+                                    <div class="mt-4 text-lg-start">Los campos marcados con asterisco (*) son obligatorios</span>
+                                    <form id="job-form">
+                                        <div class="row mt-4">
+                                          <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*">
+                                          </div>
+                                          <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono*">
+                                          </div>
+                                          <div class="form-group col-md-4">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
+                                          </div>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <div class="form-group col-md-6 text-lg-start">
+                                                <label for="cv">Curriculom Vitae*</label>
+                                                <input class="form-control" type="file" id="cv" name="cv" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
+                                            </div>
+                                            <div class="form-group col-md-6 text-lg-start">
+                                                <label for="personal-letter">Carta Personal</label>
+                                                <input class="form-control" type="file" id="personalLetter" name="personalLetter" accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mt-4">
+                                            <div class="form-group col-md-12 text-lg-start">
+                                                <label for="question">Tienes alguna duda:</label>
+                                                <textarea  class="form-control" id="question" name="question" rows="4" cols="50" placeholder="Tu mensaje"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-4">
+                                            <div class="g-recaptcha" data-sb-validations="required" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                        </div>
+                                        <div class="d-none" id="captchErrorMessage"><div class="text-center text-danger mb-3">Captcha es requerido.</div></div>
+                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Hubo un error al enviar su mensaje!</div></div>
+                                        <div class="mt-4 mb-2 text-center"><button class="btn btn-primary btn-xl text-uppercase" type="submit">Aplicar</button></div>
+                                      </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/job-form-validation.js"></script>
+        <script>
+            function openModal(){
+                $('#jobForm').modal('show');
+            } 
+
+            function jobDetails(){
+                $('#job').addClass("d-none");
+                $('#job-container').removeClass("d-none");
+            } 
+
+            function goBack(){
+                $('#job').removeClass("d-none");
+                $('#job-container').addClass("d-none");
+            } 
+        </script>
+    </body>
+</html>

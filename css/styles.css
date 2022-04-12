@@ -11001,7 +11001,6 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -11340,6 +11339,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 #contactForm .error {
+  color: #dc3545;
+}
+
+#job-form .error {
   color: #dc3545;
 }
 
