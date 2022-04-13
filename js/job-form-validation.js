@@ -32,7 +32,7 @@ $(function() {
           $("#submitButton").text("Enviando mensaje...");
             $.ajax({
                 type: "POST",
-                url: "http://localhost:5000/api/email/job-application",
+                url: "https://api.serveezy.com/api/email/job-application",
                 data: formData,
                 processData: false,
                 contentType: false,
